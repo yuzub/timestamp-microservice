@@ -1,0 +1,27 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "Timestamp Microservice - API project freecodecamp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzub/timestamp-microservice.git"
+  },
+  "keywords": [
+    "nodejs",
+    "freecodecamp"
+  ],
+  "author": "Yuriy Zubaha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuzub/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/yuzub/timestamp-microservice#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
