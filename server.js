@@ -1,12 +1,13 @@
 var express = require('express');
 var app = express();
 
-app.set('views', './views');
+app.set('port', (process.env.PORT || 5000));
+
+app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 
 app.get('/', function(req, res) {
   res.render('index');
-  // res.send('Hello World!');
 });
 
 app.get('/:ts', function(req, res) {
@@ -36,8 +37,8 @@ app.get('/:ts', function(req, res) {
   });
 });
 
-app.listen(8080, function() {
-  console.log('Example app listening on port 8080...');
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port ', app.get('port'));
 });
 
 /*The actual range of times supported by ECMAScript Date objects is slightly smaller: exactly –100,000,000 days to 100,000,000 days measured relative to midnight at the beginning of 01 January, 1970 UTC. 
